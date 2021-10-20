@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=fit-content-scale">
+	<link rel="stylesheet" type="text/css" href="css\Index.css">
+	<title>Home</title>
+</head>
+<body>
+	<section id="home" class="showcase">
+		<header>
+			<h2 class="logo"><font size="+10" color="#ffffff">Career Portfolio</font><br><font size="">Kumar Dhruv</font></h2>
+			<div class="toggle"></div>
+		</header>
+
+		<!-- Social Media -->
+		<ul class="social">
+			<li><a href="https://www.linkedin.com/in/kumar-dhruv-3992b0198"><img src="icons\lnimg.png"></a></li>
+			<li><a href="https://www.youtube.com/channel/UCvhllLJgEuM8-FBEAac90xQ"><img src="icons\youtube.png"></a></li>
+		</ul>
+
+		<!-- Autotyping Text-->
+		<div class="wrapper">
+		<div class="static-text"></div>
+		<ul class="dynamic-text">
+			<li><span>Game Developement Enthusiast</span></li>
+			<li><span>Game Design Enthusiast</span></li>
+			<li><span>Level Designer</span></li>
+			<li><span>Game AI Enthusiast</span></li>
+		</ul>
+		</div>
+	</section>
+
+	<!--Main Menu-->
+	<div class="Menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="UE Projects.html">Unreal Engine Projects</a></li>
+			<li><a href="Unity Projects.html">Unity Projects</a></li>
+			<li><a href="blender.html">Blender Projects</a></li>
+			<li><a href="cert.html">Achievements</a></li>
+			<li><a href="https://drive.google.com/drive/folders/1PpeNcmzZxeRp5Q4PRHzH-d8UStFu9Kpa?usp=sharing" download >Download Resume</a></li>
+
+		</ul>
+	</div>
+	<script type="text/javascript">
+		const menuToggle = document.querySelector('.toggle')
+		const showcase = document.querySelector('.showcase')
+
+		menuToggle.addEventListener('click', () => {
+			menuToggle.classList.toggle('active')
+			showcase.classList.toggle('active')
+		})
+	</script>
+
+
+
+
+
+
+	<!-- 2nd page with resume download and intro page-->
+	<section id="image">
+		<img class="myIntro" src="new.png" align="content"><br>
+		<div class="downloadResume">
+			<a href="https://drive.google.com/drive/folders/1PpeNcmzZxeRp5Q4PRHzH-d8UStFu9Kpa?usp=sharing">Download Resume <br><img src="d-removebg-preview.png"></a>
+		</div>
+		
+	</section>
+
+</body>
+</html>

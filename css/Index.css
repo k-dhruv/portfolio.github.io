@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Koh+Santepheap:wght@300;400;700;900&display=swap');
+
+:root {
+	--overlay-color: #03a9f4;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Koh Santepheap', cursive;
+}
+/*
+.showcase{
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+*/
+.showcase{
+	position: relative;
+	right: 0;
+	width: 100%
+	min-height:100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	color: #fff;
+	z-index: 2;
+	transition: 0.5s;
+}
+.showcase.active{
+	right: 300px;
+}
+.showcase header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 20px;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+	font-size: 25px;
+}
+
+.toggle{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: url(menuLine.png);
+	background-repeat: no-repeat;
+	background-size: 30px;
+	background-position: center;
+	cursor: pointer;
+
+}
+
+.toggle.active{
+	background: url(close.jpg);
+	background-repeat: no-repeat;
+	background-size: 25px;
+	background-position: center;
+}
+
+
+
+
+section{
+	width: 100%;
+	float: left;
+	min-height: 100vh;
+}
+
+#home{
+	
+	min-width: 100%;
+	background: url(H1.jpg);
+	background-size: cover;
+	text-overflow: hidden;
+}
+#image{
+	width: 100%
+	background-size: contain;
+}
+
+
+
+
+/* Social media*/
+.social{
+
+	position: absolute;
+	bottom: 20px;
+	z-index: 15;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.social li {
+	list-style: none;
+}
+
+.social li a{
+
+	display: inline-block;
+	filter: invert(1);
+	transform: scale(0.5);
+	transition: 0.5s;
+}
+
+.social li a:hover{
+	transform: scale(0.5) translateY(-15px);
+}
+/* Social Media ends here*/
+
+/* Main menu */
+.Menu{
+position: absolute;
+top: 0;
+right: 0;
+width: 300px;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.Menu ul{
+	font-family: ;
+	position: relative;
+	list-style: none;
+}
+
+.Menu ul li a{
+	text-decoration: none;
+	font-size: 24px;
+	color: #111;
+}
+
+.Menu ul li a:hover{
+	color: #03a9f4;
+}
+
+/* Dynamic Text*/
+
+.wrapper{
+	display: flex;
+}
+.wrapper .static-text{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.wrapper .dynamic-text{
+	margin-left: 15px;
+	line-height: 60px;
+	height: 60px;
+	/*background-color: #ff4c29;*/
+	overflow: hidden;
+}
+
+
+
+.dynamic-text li{
+	list-style: none;
+	color:  #FFFF00;/*#face30 ;*/
+	font-size:40px;
+	font-weight: 800;
+	top: 0;
+	position: relative;
+	animation: slide 24s steps(4) infinite;
+
+}
+
+@keyframes slide{
+	100%{
+		top: -240px;
+	}
+}
+
+.dynamic-text li::after{
+	content:"";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #111111;
+	border-left: 2px solid #ff4c29;
+	animation: typing 6s steps(28) infinite;
+
+}
+
+@keyframes typing{
+	40%, 60%{
+		left: calc(100% + 30px);
+	}
+	100%{
+		left: 0;
+	}
+}
+
+
+*/
+
+
+/*Dynamic text ends here */ 
+
+
+
+
+
+
+/* 2nd page */
+
+img{
+	
+}
+.myIntro{
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+.downloadResume{
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-bottom: 80px;
+}
+.downloadResume a{
+	color: black;
+	display: block;
+	background: #CCCCFF;
+	padding: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	width: 320px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
